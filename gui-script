@@ -1,0 +1,229 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LetterSearchPassesGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Dummy = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local UICorner_3 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local FlyPass = Instance.new("TextButton")
+local UIPadding_3 = Instance.new("UIPadding")
+local UICorner_4 = Instance.new("UICorner")
+local VotePass = Instance.new("TextButton")
+local UIPadding_4 = Instance.new("UIPadding")
+local UICorner_5 = Instance.new("UICorner")
+local HintPass = Instance.new("TextButton")
+local UIPadding_5 = Instance.new("UIPadding")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local UIStroke_1 = Instance.new("UIStroke")
+
+--Properties:
+
+LetterSearchPassesGui.Name = "LetterSearchPassesGui"
+LetterSearchPassesGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LetterSearchPassesGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = LetterSearchPassesGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.606925189, 0, 0.313764602, 0)
+Frame.Size = UDim2.new(0.29130435, 0, 0.369230777, 0)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.0396825373, 0)
+TextLabel.Size = UDim2.new(0.90298444, 0, 0.149603188, 0)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "Letter Search Gamepasses!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.90298444, 0, 0.0198412687, 0)
+CloseButton.Size = UDim2.new(0.169552058, 0, 0.189285725, 0)
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = CloseButton
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.ZIndex = 0
+ImageLabel.Image = "rbxassetid://133449746853088"
+ImageLabel.ImageTransparency = 0.500
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = ImageLabel
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 0.500
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0497513972, 0, 0.189285651, 0)
+ScrollingFrame.Size = UDim2.new(0.85323292, 0, 0.734920681, 0)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.0199999996, 0)
+
+Dummy.Name = "Dummy"
+Dummy.Parent = ScrollingFrame
+Dummy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Dummy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dummy.BorderSizePixel = 0
+Dummy.LayoutOrder = 999
+Dummy.Position = UDim2.new(0, 0, 1.02988572e-07, 0)
+Dummy.Size = UDim2.new(1, 0, 0.150000006, 0)
+Dummy.Font = Enum.Font.FredokaOne
+Dummy.Text = "More Coming Soon!"
+Dummy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dummy.TextScaled = true
+Dummy.TextSize = 14.000
+Dummy.TextWrapped = true
+
+UIPadding.Parent = Dummy
+UIPadding.PaddingBottom = UDim.new(0.0500000007, 0)
+UIPadding.PaddingLeft = UDim.new(0.100000001, 0)
+UIPadding.PaddingRight = UDim.new(0.100000001, 0)
+UIPadding.PaddingTop = UDim.new(0.0500000007, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Dummy
+
+UIPadding_2.Parent = ScrollingFrame
+UIPadding_2.PaddingBottom = UDim.new(0.0250000004, 0)
+UIPadding_2.PaddingLeft = UDim.new(0.0250000004, 0)
+UIPadding_2.PaddingRight = UDim.new(0.0500000007, 0)
+UIPadding_2.PaddingTop = UDim.new(0.0199999996, 0)
+
+FlyPass.Name = "FlyPass"
+FlyPass.Parent = ScrollingFrame
+FlyPass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyPass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlyPass.BorderSizePixel = 0
+FlyPass.Position = UDim2.new(0, 0, 1.02988572e-07, 0)
+FlyPass.Size = UDim2.new(1, 0, 0.150000006, 0)
+FlyPass.Font = Enum.Font.FredokaOne
+FlyPass.Text = "Free Fly Gamepass"
+FlyPass.TextColor3 = Color3.fromRGB(0, 0, 0)
+FlyPass.TextScaled = true
+FlyPass.TextSize = 14.000
+FlyPass.TextWrapped = true
+
+UIPadding_3.Parent = FlyPass
+UIPadding_3.PaddingBottom = UDim.new(0.0500000007, 0)
+UIPadding_3.PaddingLeft = UDim.new(0.100000001, 0)
+UIPadding_3.PaddingRight = UDim.new(0.100000001, 0)
+UIPadding_3.PaddingTop = UDim.new(0.0500000007, 0)
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = FlyPass
+
+VotePass.Name = "VotePass"
+VotePass.Parent = ScrollingFrame
+VotePass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VotePass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VotePass.BorderSizePixel = 0
+VotePass.Position = UDim2.new(0, 0, 1.02988572e-07, 0)
+VotePass.Size = UDim2.new(1, 0, 0.150000006, 0)
+VotePass.Font = Enum.Font.FredokaOne
+VotePass.Text = "Free 2x Vote Gamepass"
+VotePass.TextColor3 = Color3.fromRGB(0, 0, 0)
+VotePass.TextScaled = true
+VotePass.TextSize = 14.000
+VotePass.TextWrapped = true
+
+UIPadding_4.Parent = VotePass
+UIPadding_4.PaddingBottom = UDim.new(0.0500000007, 0)
+UIPadding_4.PaddingLeft = UDim.new(0.100000001, 0)
+UIPadding_4.PaddingRight = UDim.new(0.100000001, 0)
+UIPadding_4.PaddingTop = UDim.new(0.0500000007, 0)
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = VotePass
+
+HintPass.Name = "HintPass"
+HintPass.Parent = ScrollingFrame
+HintPass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HintPass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HintPass.BorderSizePixel = 0
+HintPass.Position = UDim2.new(0, 0, 1.02988572e-07, 0)
+HintPass.Size = UDim2.new(1, 0, 0.150000006, 0)
+HintPass.Font = Enum.Font.FredokaOne
+HintPass.Text = "Free Hint Gamepass"
+HintPass.TextColor3 = Color3.fromRGB(0, 0, 0)
+HintPass.TextScaled = true
+HintPass.TextSize = 14.000
+HintPass.TextWrapped = true
+
+UIPadding_5.Parent = HintPass
+UIPadding_5.PaddingBottom = UDim.new(0.0500000007, 0)
+UIPadding_5.PaddingLeft = UDim.new(0.100000001, 0)
+UIPadding_5.PaddingRight = UDim.new(0.100000001, 0)
+UIPadding_5.PaddingTop = UDim.new(0.0500000007, 0)
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = HintPass
+
+UIStroke.Parent = Frame
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Thickness = 2
+
+UIStroke_1.Parent = TextLabel
+UIStroke_1.Color = Color3.fromRGB(0, 0, 0)
+UIStroke_1.Thickness = 1.2
+
+FlyPass.Activated:Connect(function()
+	game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("CanFly").Value = true
+end)
+
+VotePass.Activated:Connect(function()
+	game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("Can2xVote").Value = true
+end)
+
+HintPass.Activated:Connect(function()
+	game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("CanHaveHintGiver").Value = true
+end)
+
+CloseButton.Activated:Connect(function()
+	Frame:Destroy()
+end)
