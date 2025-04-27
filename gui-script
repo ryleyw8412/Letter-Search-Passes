@@ -34,7 +34,7 @@ local UIStroke_2 = Instance.new("UIStroke")
 --Properties:
 
 LetterSearchPassesGui.Name = "LetterSearchPassesGui"
-LetterSearchPassesGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LetterSearchPassesGui.Parent = game.CoreGui
 LetterSearchPassesGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = LetterSearchPassesGui
