@@ -28,7 +28,6 @@ local UIGradient_4 = Instance.new("UIGradient")
 
 LetterSearchPasses.Name = "LetterSearchPasses"
 LetterSearchPasses.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LetterSearchPasses.Enabled = true
 LetterSearchPasses.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
