@@ -27,7 +27,8 @@ local UIGradient_4 = Instance.new("UIGradient")
 --Properties:
 
 LetterSearchPasses.Name = "LetterSearchPasses"
-LetterSearchPasses.Parent = game.CoreGui
+LetterSearchPasses.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LetterSearchPasses.Enabled = true
 LetterSearchPasses.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -60,6 +61,7 @@ MainTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 UIPadding.Parent = MainTitle
 UIPadding.PaddingLeft = UDim.new(0.0250000004, 0)
+UIPadding.PaddingRight = UDim.new(0.100000001, 0)
 
 Fly.Name = "Fly"
 Fly.Parent = Main
@@ -165,46 +167,46 @@ UIGradient_4.Parent = Main
 
 -- Scripts:
 
-local function CVYFK_fake_script() -- Fly.LocalScript 
+local function MZQYUJ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.Activated:Connect(function()
 		game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("CanFly").Value = true
 	end)
 end
-coroutine.wrap(CVYFK_fake_script)()
-local function CFHA_fake_script() -- Vote.LocalScript 
+coroutine.wrap(MZQYUJ_fake_script)()
+local function UQIN_fake_script() -- Vote.LocalScript 
 	local script = Instance.new('LocalScript', Vote)
 
 	script.Parent.Activated:Connect(function()
 		game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("Can2xVote").Value = true
 	end)
 end
-coroutine.wrap(CFHA_fake_script)()
-local function TQMU_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(UQIN_fake_script)()
+local function GVTE_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(TQMU_fake_script)()
-local function FWDK_fake_script() -- Hint.LocalScript 
+coroutine.wrap(GVTE_fake_script)()
+local function DCYNS_fake_script() -- Hint.LocalScript 
 	local script = Instance.new('LocalScript', Hint)
 
 	script.Parent.Activated:Connect(function()
 		game.Players.LocalPlayer:WaitForChild("StatsHolder"):WaitForChild("CanHaveHintGiver").Value = true
 	end)
 end
-coroutine.wrap(FWDK_fake_script)()
-local function LWQN_fake_script() -- Main.MakeDraggable 
+coroutine.wrap(DCYNS_fake_script)()
+local function XFAZA_fake_script() -- Main.MakeDraggable 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(LWQN_fake_script)()
-local function NFPWT_fake_script() -- LetterSearchPasses.Setup 
+coroutine.wrap(XFAZA_fake_script)()
+local function DRQMQ_fake_script() -- LetterSearchPasses.Setup 
 	local script = Instance.new('LocalScript', LetterSearchPasses)
 
 	local MainStroke = Instance.new("UIStroke")
@@ -224,4 +226,4 @@ local function NFPWT_fake_script() -- LetterSearchPasses.Setup
 		stroke.Color = Color3.fromRGB(255, 255, 255)
 	end
 end
-coroutine.wrap(NFPWT_fake_script)()
+coroutine.wrap(DRQMQ_fake_script)()
